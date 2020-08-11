@@ -1,5 +1,3 @@
-require 'spec/fixtures/mp3s'
-
 class MP3Importer
   attr_accessor :path
 
