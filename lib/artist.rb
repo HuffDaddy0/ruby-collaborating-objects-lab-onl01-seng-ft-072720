@@ -18,3 +18,8 @@ class Artist
 
   def songs
     Song.all.find_all{|song| song.artist.name == self}
+  end
+
+  def self.find_or_create_by_name(name)
+  if self.all.find {|artist| artist.name.include?(name)}
+    self.all.find
