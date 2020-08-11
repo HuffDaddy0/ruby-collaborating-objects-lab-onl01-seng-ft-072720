@@ -1,4 +1,16 @@
-require 'fixtures/mp3s'
+require 'spec/fixtures/mp3s'
 
 class MP3Importer
-  
+  attr_accessor :path
+
+def initialize(path)
+  self.path = path
+end
+
+def files
+
+end
+
+def import
+
+end
