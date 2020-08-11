@@ -25,3 +25,9 @@ class Artist
     self.all.find{|artist| artist.name}
   else
     self.new(name)
+  end
+end
+
+def print_songs
+  songs = Song.all.find_all {|song| song.artist == self}
+  puts songs
